@@ -1,0 +1,186 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { Calendar, Clock, Tag } from 'lucide-react';
+import postsData from '@/data/blog/posts.json';
+
+export const metadata = {
+  title: 'Blog de Productos Promocionales y Marketing | KS Promocionales Ecuador',
+  description: 'Artículos sobre productos promocionales, merchandising, diseño y estrategias de marketing. Consejos expertos para potenciar tu marca en Ecuador.',
+  keywords: 'blog productos promocionales, marketing merchandising, diseño branding, regalos corporativos Ecuador',
+  openGraph: {
+    title: 'Blog KS Promocionales - Marketing y Merchandising Ecuador',
+    description: 'Consejos expertos sobre productos promocionales, diseño y estrategias de marketing para empresas.',
+    type: 'website',
+  },
+};
+
+export default function BlogPage() {
+  const categories = [...new Set(postsData.map(post => post.categoryName))];
+
+  const getCategoryColor = (category) => {
+    const colors = {
+      'Productos': 'bg-blue-100 text-blue-700',
+      'Marketing': 'bg-green-100 text-green-700',
+      'Merchandising': 'bg-purple-100 text-purple-700',
+      'Diseño': 'bg-pink-100 text-pink-700',
+    };
+    return colors[category] || 'bg-gray-100 text-gray-700';
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-primary to-primary-dark text-white py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Blog KS Promocionales
+            </h1>
+            <p className="text-lg md:text-xl text-white/90 mb-8">
+              Descubre estrategias, tendencias y consejos expertos sobre productos promocionales,
+              merchandising y branding que transformarán tu negocio.
+            </p>
+
+            {/* Category Filter */}
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link
+                href="/blog"
+                className="px-4 py-2 bg-white text-primary rounded-full font-medium hover:bg-gray-100 transition-colors"
+              >
+                Todos
+              </Link>
+              {categories.map(category => (
+                <Link
+                  key={category}
+                  href={`/blog?category=${category.toLowerCase()}`}
+                  className="px-4 py-2 bg-white/20 text-white rounded-full font-medium hover:bg-white/30 transition-colors"
+                >
+                  {category}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Posts Grid */}
+      <section className="py-12 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {postsData.map((post, index) => (
+              <article
+                key={post.id}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {/* Featured Image */}
+                <Link href={`/blog/${post.slug}`} className="block relative h-56 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+
+                  {/* Category Badge */}
+                  <span className={`absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(post.categoryName)}`}>
+                    {post.categoryName}
+                  </span>
+                </Link>
+
+                {/* Content */}
+                <div className="p-6">
+                  {/* Meta Info */}
+                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      <span>{new Date(post.date).toLocaleDateString('es-EC', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric'
+                      })}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="w-4 h-4" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+
+                  {/* Title */}
+                  <Link href={`/blog/${post.slug}`}>
+                    <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h2>
+                  </Link>
+
+                  {/* Excerpt */}
+                  <p className="text-gray-600 mb-4 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {post.tags.slice(0, 3).map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="inline-flex items-center gap-1 text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded"
+                      >
+                        <Tag className="w-3 h-3" />
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Read More Link */}
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="inline-flex items-center text-primary font-semibold hover:gap-2 transition-all"
+                  >
+                    Leer más
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+
+                {/* Author */}
+                <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-bold">
+                      H
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-gray-900">{post.author}</p>
+                      <p className="text-xs text-gray-500">Asesora Comercial</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-br from-primary to-primary-dark text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            ¿Listo para Potenciar tu Marca?
+          </h2>
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+            Convierte lo que aprendiste en acción. Cotiza tus productos promocionales
+            personalizados y lleva tu marca al siguiente nivel.
+          </p>
+          <Link
+            href="/#categorias"
+            className="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"
+          >
+            Ver Catálogo de Productos
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}

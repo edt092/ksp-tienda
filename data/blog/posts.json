@@ -1,0 +1,21 @@
+[
+  {
+    "id": "productos-promocionales-ecuador",
+    "title": "Guía Completa de Productos Promocionales en Ecuador",
+    "slug": "productos-promocionales-ecuador",
+    "excerpt": "Descubre cómo elegir los productos promocionales perfectos para tu marca en Ecuador. Consejos, tendencias y casos de éxito.",
+    "author": "Hanna - KS Promocionales",
+    "date": "2024-11-09",
+    "categoryName": "Guías",
+    "category": "guias",
+    "tags": ["productos promocionales", "marketing", "branding", "ecuador"],
+    "image": "/images/products-categoria/articulos-escritura/boligrafo-calvin/boligrafo-calvin.jpg",
+    "readTime": "5 min",
+    "featured": true,
+    "seo": {
+      "metaTitle": "Guía Completa de Productos Promocionales en Ecuador | KS Promocionales",
+      "metaDescription": "Descubre cómo elegir los productos promocionales perfectos para tu marca en Ecuador. Consejos prácticos, tendencias y casos de éxito.",
+      "keywords": "productos promocionales ecuador, marketing promocional, branding, regalos corporativos"
+    }
+  }
+]
