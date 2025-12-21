@@ -8,11 +8,21 @@ import categoriesData from '@/data/categories.json';
 import productsData from '@/data/products.json';
 
 export const metadata = {
-  title: 'KS Promocionales - Productos Promocionales Personalizados Ecuador',
-  description: 'Productos promocionales con storytelling que convierten. Textiles, tecnología, oficina y más personalizados con tu marca. Cotiza por WhatsApp en Ecuador.',
+  title: 'Productos Promocionales Ecuador | Regalos Corporativos KS',
+  description: 'Artículos promocionales y regalos corporativos en Ecuador. Personalizamos mugs, tecnología y más con tu logo. ¡Cotiza por WhatsApp! Envíos nacionales.',
+  verification: {
+    google: 'TU_CODIGO_DE_VERIFICACION_AQUI',
+  },
+  alternates: {
+    canonical: 'https://www.kronosolopromocionales.com/',
+  },
   openGraph: {
-    title: 'KS Promocionales - Productos Promocionales Ecuador',
-    description: 'Productos promocionales con storytelling que convierten. Cotiza por WhatsApp.',
+    title: 'Productos Promocionales Ecuador | Regalos Corporativos KS',
+    description: 'Artículos promocionales y regalos corporativos en Ecuador. Personalizamos mugs, tecnología y más con tu logo. ¡Cotiza por WhatsApp! Envíos nacionales.',
+    url: 'https://www.kronosolopromocionales.com/',
+    siteName: 'KS Promocionales',
+    locale: 'es_EC',
+    type: 'website',
   },
 };
 
@@ -25,8 +35,27 @@ export default function HomePage() {
     return categoriesData.find(c => c.id === categoryId);
   };
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'KS Promocionales',
+    image: 'https://www.kronosolopromocionales.com/images/og-image.jpg',
+    description: 'Artículos promocionales y regalos corporativos en Ecuador.',
+    url: 'https://www.kronosolopromocionales.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'EC',
+      addressLocality: 'Quito'
+    },
+    priceRange: '$$'
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero Section */}
       <StorytellingHero />
 
