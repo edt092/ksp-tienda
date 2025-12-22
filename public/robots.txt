@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /admin/
+
+# Especifica la ubicación de tu sitemap
+Sitemap: https://www.kronosolopromocionales.com/sitemap.xml

@@ -1,6 +1,7 @@
 import StorytellingHero from '@/components/StorytellingHero';
 import CategoryGrid from '@/components/CategoryGrid';
 import ProductCard from '@/components/ProductCard';
+import PromoCarousel from '@/components/PromoCarousel';
 import { Palette, Zap, Sparkles, MessageCircle, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
@@ -58,6 +59,9 @@ export default function HomePage() {
       />
       {/* Hero Section */}
       <StorytellingHero />
+
+      {/* Promo Carousel Section */}
+      <PromoCarousel />
 
       {/* Categories Section */}
       <CategoryGrid categories={categoriesData} />

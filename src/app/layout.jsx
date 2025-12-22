@@ -2,7 +2,7 @@ import './globals.css';
 import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import DigitalAdvisorChat from '@/components/DigitalAdvisorChat';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata = {
   metadataBase: new URL('https://www.kronosolopromocionales.com'),
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
-        <DigitalAdvisorChat />
+        <WhatsAppButton />
       </body>
     </html>
   );
