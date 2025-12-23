@@ -9,8 +9,8 @@ import categoriesData from '@/data/categories.json';
 import productsData from '@/data/products.json';
 
 export const metadata = {
-  title: 'Productos Promocionales Ecuador | Regalos Corporativos KS',
-  description: 'Artículos promocionales y regalos corporativos en Ecuador. Personalizamos mugs, tecnología y más con tu logo. ¡Cotiza por WhatsApp! Envíos nacionales.',
+  title: 'Productos Promocionales Ecuador | Regalos Corporativos Quito y Guayaquil | KS',
+  description: 'Productos promocionales Ecuador: artículos promocionales y regalos corporativos en Quito, Guayaquil y todo el país. Personalizamos mugs, tecnología y más con tu logo. ¡Cotiza por WhatsApp!',
   verification: {
     google: 'TU_CODIGO_DE_VERIFICACION_AQUI',
   },
@@ -18,8 +18,8 @@ export const metadata = {
     canonical: 'https://www.kronosolopromocionales.com/',
   },
   openGraph: {
-    title: 'Productos Promocionales Ecuador | Regalos Corporativos KS',
-    description: 'Artículos promocionales y regalos corporativos en Ecuador. Personalizamos mugs, tecnología y más con tu logo. ¡Cotiza por WhatsApp! Envíos nacionales.',
+    title: 'Productos Promocionales Ecuador | Regalos Corporativos Quito y Guayaquil | KS',
+    description: 'Productos promocionales Ecuador: artículos promocionales y regalos corporativos en Quito, Guayaquil y todo el país. Personalizamos mugs, tecnología y más con tu logo. ¡Cotiza por WhatsApp!',
     url: 'https://www.kronosolopromocionales.com/',
     siteName: 'KS Promocionales',
     locale: 'es_EC',
@@ -41,13 +41,18 @@ export default function HomePage() {
     '@type': 'LocalBusiness',
     name: 'KS Promocionales',
     image: 'https://www.kronosolopromocionales.com/images/og-image.jpg',
-    description: 'Artículos promocionales y regalos corporativos en Ecuador.',
+    description: 'Productos promocionales Ecuador: artículos promocionales y regalos corporativos en Quito, Guayaquil y todo el país.',
     url: 'https://www.kronosolopromocionales.com',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'EC',
       addressLocality: 'Quito'
     },
+    areaServed: [
+      { '@type': 'City', name: 'Quito' },
+      { '@type': 'City', name: 'Guayaquil' },
+      { '@type': 'Country', name: 'Ecuador' }
+    ],
     priceRange: '$$'
   };
 
@@ -151,7 +156,7 @@ export default function HomePage() {
               ¿Por Qué Elegir KS Promocionales?
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto px-4">
-              No solo vendemos productos, creamos experiencias de marca
+              Somos tu aliado en productos promocionales en Ecuador. Atendemos Quito, Guayaquil y todo el país.
             </p>
           </div>
 

@@ -10,6 +10,7 @@ export default function Footer() {
     { name: 'Inicio', href: '/' },
     { name: 'Categorías', href: '/#categorias' },
     { name: 'Nosotros', href: '/nosotros' },
+    { name: 'Contacto', href: '/contacto' },
   ];
 
   const categories = [
@@ -53,9 +54,11 @@ export default function Footer() {
                 <div className="text-xs md:text-sm text-gray-400">Tu marca, nuestra historia</div>
               </div>
             </Link>
-            <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-              Transformamos productos promocionales en historias que conectan emocionalmente
-              con tu audiencia en todo Ecuador.
+            <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-3">
+              Productos promocionales Ecuador: transformamos artículos promocionales en historias que conectan emocionalmente con tu audiencia.
+            </p>
+            <p className="text-gray-500 text-xs md:text-sm">
+              Productos promocionales Quito | Productos promocionales Guayaquil | Envíos a todo Ecuador
             </p>
           </div>
 
@@ -145,10 +148,16 @@ export default function Footer() {
             <p className="text-center md:text-left">
               © {currentYear} KS Promocionales. Todos los derechos reservados.
             </p>
-            <p className="flex items-center gap-2 text-center md:text-right">
-              Hecho con
-              <span className="text-red-500 animate-pulse">❤️</span>
-              en Ecuador
+            <p>
+              Desarrollado por:{' '}
+              <a
+                href="https://edwinbayonaitmanager.online/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-white transition-colors font-medium"
+              >
+                Bayona Digital Systems
+              </a>
             </p>
           </div>
         </div>

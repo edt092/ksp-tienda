@@ -1170,5 +1170,313 @@ export const blogContent = {
     </ul>
 
     <p><strong>¿Quieres ver más opciones?</strong> Visita nuestro <a href="/categorias">catálogo completo</a> o explora nuestros <a href="/catalogos-digitales">catálogos digitales</a> para inspirarte.</p>
+  `,
+
+  'productos-promocionales-por-mayor-mayoreo-guia-completa': `
+    <p>¿Te imaginas multiplicar el impacto de tu marca sin agotar tu presupuesto? Los <strong>productos promocionales al por mayor</strong> son la solución inteligente para empresas que buscan aumentar su visibilidad y fidelizar clientes, pero a menudo se enfrentan a precios elevados y opciones limitadas. En este artículo, descubrirás cómo adquirir productos promocionales de calidad al por mayor (y por mayoreo) puede transformar tu estrategia de marketing.</p>
+
+    <!-- CTA Principal -->
+    <div style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 16px; padding: 32px; margin: 32px 0; text-align: center; color: white;">
+      <h3 style="margin: 0 0 16px 0; font-size: 24px; font-weight: bold;">¿Necesitas productos promocionales al por mayor?</h3>
+      <p style="margin: 0 0 24px 0; opacity: 0.9;">En KS Promocionales te ofrecemos los mejores precios por volumen en Ecuador</p>
+      <a href="https://wa.me/593999814838?text=Hola,%20me%20interesa%20cotizar%20productos%20promocionales%20al%20por%20mayor" style="display: inline-block; background: white; color: #ea580c; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-right: 12px;">Cotizar por WhatsApp</a>
+      <a href="/categorias" style="display: inline-block; background: rgba(255,255,255,0.2); color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; border: 2px solid white;">Ver Catálogo</a>
+    </div>
+
+    <h2 id="qué-son-los-productos-promocionales-al-por-mayor">¿Qué son los Productos Promocionales al Por Mayor y Por Qué Son Importantes?</h2>
+
+    <p>Los <strong>productos promocionales al por mayor</strong> son artículos personalizados con el logo o mensaje de una marca, que se adquieren en grandes cantidades para distribución con fines publicitarios. Su importancia radica en su capacidad para generar un impacto tangible y duradero a un costo significativamente menor que otras estrategias de marketing.</p>
+
+    <h3>Beneficios Clave de la Compra al Por Mayor</h3>
+
+    <p>Adquirir <strong>artículos promocionales por mayoreo</strong> ofrece ventajas que impulsan el crecimiento de tu marca:</p>
+
+    <ul>
+      <li><strong>Reducción de costos:</strong> El precio por unidad disminuye drásticamente al comprar en grandes volúmenes.</li>
+      <li><strong>Disponibilidad inmediata:</strong> Evitas quedarte sin stock en momentos clave de tus campañas.</li>
+      <li><strong>Flexibilidad:</strong> Puedes usarlos en diversas campañas, eventos y promociones durante todo el año.</li>
+      <li><strong>Mayor ROI:</strong> Obtienes un mejor retorno de la inversión que con publicidad tradicional.</li>
+    </ul>
+
+    <!-- Productos Destacados: Bolígrafos -->
+    <div style="background: #f8fafc; border-radius: 16px; padding: 24px; margin: 32px 0; border: 1px solid #e2e8f0;">
+      <h4 style="margin: 0 0 16px 0; color: #1e293b;">Productos Ideales para Compra por Mayor:</h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+        <a href="/productos/boligrafo-metalico-shell-oferta" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0; transition: all 0.3s;">
+          <img src="https://catalogospromocionales.com/images/productos/13341.jpg" alt="Bolígrafo Metálico Shell" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 12px;">
+          <p style="margin: 0; color: #1e293b; font-weight: 600; font-size: 14px;">Bolígrafo Metálico Shell</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Ideal para grandes cantidades</p>
+        </a>
+        <a href="/productos/boligrafo-dormin-bamboo" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0; transition: all 0.3s;">
+          <img src="https://catalogospromocionales.com/images/productos/9802.jpg" alt="Bolígrafo Dormin Bamboo" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 12px;">
+          <p style="margin: 0; color: #1e293b; font-weight: 600; font-size: 14px;">Bolígrafo Dormin Bamboo</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Ecológico y económico</p>
+        </a>
+        <a href="/categorias/escritura" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0; transition: all 0.3s;">
+          <div style="width: 100%; height: 120px; background: linear-gradient(135deg, #f97316, #ea580c); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+            <span style="color: white; font-weight: bold;">Ver Más +</span>
+          </div>
+          <p style="margin: 0; color: #f97316; font-weight: 600; font-size: 14px;">Ver todos los bolígrafos</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Categoría completa</p>
+        </a>
+      </div>
+    </div>
+
+    <h3>Tipos Comunes de Productos Promocionales al Por Mayor</h3>
+
+    <p>La variedad de <strong>productos promocionales por mayoreo</strong> es inmensa:</p>
+
+    <ul>
+      <li><strong>Artículos de escritura:</strong> <a href="/categorias/escritura">Bolígrafos, lápices, marcadores</a> - los clásicos que nunca fallan.</li>
+      <li><strong>Ropa:</strong> <a href="/categorias/textiles">Camisetas, gorras, sudaderas</a> - embajadores móviles de tu marca.</li>
+      <li><strong>Artículos de oficina:</strong> <a href="/categorias/oficina">Tazas, libretas, calendarios</a> - presencia constante en el escritorio.</li>
+      <li><strong>Tecnología:</strong> <a href="/categorias/tecnologia">Memorias USB, power banks, audífonos</a> - alto valor percibido.</li>
+      <li><strong>Bolsas y mochilas:</strong> <a href="/categorias/bolsos-mochilas">Bolsas de tela, mochilas promocionales</a> - publicidad ambulante.</li>
+    </ul>
+
+    <h2 id="beneficios-de-comprar-al-por-mayor">Beneficios Clave de Comprar Productos Promocionales al Por Mayor</h2>
+
+    <h3>Ahorro de Costos Significativo</h3>
+
+    <p>El principal beneficio de comprar <strong>productos promocionales por mayoreo</strong> es el ahorro de costos. Al comprar en grandes cantidades, el precio por unidad disminuye drásticamente. El precio unitario de un bolígrafo personalizado puede ser hasta un 50% menor al comprarlo por mayoreo.</p>
+
+    <h3>Mayor Flexibilidad y Disponibilidad</h3>
+
+    <p>Con stock considerable de <strong>artículos promocionales por mayoreo</strong>, tu empresa gana flexibilidad para responder a oportunidades de marketing inesperadas. Puedes organizar sorteos o participar en eventos sin preocuparte por plazos de entrega ajustados.</p>
+
+    <!-- CTA Intermedio -->
+    <div style="background: #ecfdf5; border-left: 4px solid #10b981; padding: 24px; margin: 32px 0; border-radius: 0 12px 12px 0;">
+      <h4 style="margin: 0 0 12px 0; color: #065f46;">¿Planeas una campaña grande?</h4>
+      <p style="margin: 0 0 16px 0; color: #047857;">Cotiza con nosotros y obtén precios especiales por volumen. Atendemos pedidos desde 50 hasta 10,000+ unidades.</p>
+      <a href="https://wa.me/593999814838?text=Hola,%20necesito%20cotizar%20un%20pedido%20grande%20de%20productos%20promocionales" style="display: inline-block; background: #10b981; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">Solicitar Cotización por Mayor</a>
+    </div>
+
+    <h2 id="tecnologia-promocional">Tecnología Promocional al Por Mayor</h2>
+
+    <p>Los gadgets tecnológicos son cada vez más populares y apreciados. Son una excelente opción para impresionar a tus clientes:</p>
+
+    <ul>
+      <li><strong>Memorias USB:</strong> Útiles y prácticas. Precarga contenido relevante para tus clientes.</li>
+      <li><strong>Cargadores portátiles:</strong> Un regalo muy apreciado para quienes siempre están en movimiento.</li>
+      <li><strong>Audífonos y parlantes:</strong> Ideales para eventos o como regalo para empleados.</li>
+    </ul>
+
+    <!-- Productos Destacados: Tecnología -->
+    <div style="background: #f8fafc; border-radius: 16px; padding: 24px; margin: 32px 0; border: 1px solid #e2e8f0;">
+      <h4 style="margin: 0 0 16px 0; color: #1e293b;">Tecnología Promocional por Mayor:</h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+        <a href="/productos/memoria-usb-metalica-giratoria-8-gb" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <img src="https://catalogospromocionales.com/images/productos/10177.jpg" alt="Memoria USB 8GB" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 12px;">
+          <p style="margin: 0; color: #1e293b; font-weight: 600; font-size: 14px;">Memoria USB 8GB</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Metálica giratoria</p>
+        </a>
+        <a href="/productos/parlante-bluetooth-con-led-vogue" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <img src="https://catalogospromocionales.com/images/productos/12687.jpg" alt="Parlante Bluetooth Vogue" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 12px;">
+          <p style="margin: 0; color: #1e293b; font-weight: 600; font-size: 14px;">Parlante Bluetooth Vogue</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Con LED personalizable</p>
+        </a>
+        <a href="/categorias/tecnologia" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <div style="width: 100%; height: 120px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+            <span style="color: white; font-weight: bold;">Ver Más +</span>
+          </div>
+          <p style="margin: 0; color: #3b82f6; font-weight: 600; font-size: 14px;">Toda la tecnología</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Categoría completa</p>
+        </a>
+      </div>
+    </div>
+
+    <h2 id="elegir-productos-adecuados">Cómo Elegir los Productos Promocionales Adecuados</h2>
+
+    <h3>Conoce a Tu Audiencia</h3>
+
+    <p>Antes de ordenar <strong>artículos promocionales por mayoreo</strong>, dedica tiempo a comprender a tu público:</p>
+
+    <ul>
+      <li>¿Cuáles son sus intereses, necesidades y preferencias?</li>
+      <li>¿Qué tipo de productos usarían y apreciarían realmente?</li>
+      <li>¿Qué edad y estilo de vida tienen?</li>
+      <li>¿En qué contexto recibirán el producto?</li>
+    </ul>
+
+    <h2 id="donde-comprar">Dónde Comprar Productos Promocionales al Por Mayor en Ecuador</h2>
+
+    <h3>KS Promocionales: Tu Proveedor de Confianza</h3>
+
+    <p>En <strong>KS Promocionales</strong> somos especialistas en artículos promocionales al por mayor para empresas ecuatorianas. Ofrecemos:</p>
+
+    <ul>
+      <li><strong>Precios competitivos por volumen:</strong> Mientras más pides, más ahorras.</li>
+      <li><strong>Amplia variedad:</strong> Más de 500 productos diferentes para elegir.</li>
+      <li><strong>Personalización profesional:</strong> Serigrafía, bordado, grabado láser y más.</li>
+      <li><strong>Asesoría personalizada:</strong> Te ayudamos a elegir el producto perfecto.</li>
+      <li><strong>Envíos a todo Ecuador:</strong> Quito, Guayaquil, Cuenca y todas las ciudades.</li>
+    </ul>
+
+    <!-- CTA WhatsApp Grande -->
+    <div style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); border-radius: 16px; padding: 40px; margin: 32px 0; text-align: center; color: white;">
+      <h3 style="margin: 0 0 16px 0; font-size: 28px; font-weight: bold;">¿Listo para cotizar tu pedido por mayor?</h3>
+      <p style="margin: 0 0 24px 0; font-size: 18px; opacity: 0.95;">Escríbenos por WhatsApp y recibe una cotización personalizada en menos de 24 horas</p>
+      <a href="https://wa.me/593999814838?text=Hola,%20me%20interesa%20cotizar%20productos%20promocionales%20al%20por%20mayor%20para%20mi%20empresa" style="display: inline-flex; align-items: center; gap: 12px; background: white; color: #16a34a; padding: 18px 36px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">Cotizar por WhatsApp</a>
+    </div>
+
+    <h2 id="factores-proveedor">Factores a Considerar al Elegir un Proveedor</h2>
+
+    <h3>Reputación y Experiencia</h3>
+
+    <p>Investiga la reputación del proveedor. Busca reseñas, testimonios y verifica su experiencia:</p>
+
+    <ul>
+      <li>Tiempo que lleva el proveedor en el mercado.</li>
+      <li>Tipo de clientes con los que ha trabajado.</li>
+      <li>Certificaciones de calidad o sostenibilidad.</li>
+    </ul>
+
+    <h3>Capacidad de Personalización</h3>
+
+    <p>Asegúrate de que el proveedor ofrezca las opciones de personalización que necesitas:</p>
+
+    <ul>
+      <li>Métodos de impresión disponibles (serigrafía, bordado, grabado láser, etc.).</li>
+      <li>Catálogo de productos y variedad.</li>
+      <li>Flexibilidad para adaptarse a tus diseños específicos.</li>
+    </ul>
+
+    <!-- Productos Destacados: Textiles -->
+    <div style="background: #f8fafc; border-radius: 16px; padding: 24px; margin: 32px 0; border: 1px solid #e2e8f0;">
+      <h4 style="margin: 0 0 16px 0; color: #1e293b;">Textiles para Compra por Mayor:</h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+        <a href="/productos/polo-cotton-nature-hombre" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <img src="https://catalogospromocionales.com/images/productos/7010.jpg" alt="Polo Cotton Nature" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 12px;">
+          <p style="margin: 0; color: #1e293b; font-weight: 600; font-size: 14px;">Polo Cotton Nature</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Algodón de calidad</p>
+        </a>
+        <a href="/productos/gorra-6-paneles-galva" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <img src="https://catalogospromocionales.com/images/productos/9901.jpg" alt="Gorra 6 Paneles Galva" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 12px;">
+          <p style="margin: 0; color: #1e293b; font-weight: 600; font-size: 14px;">Gorra 6 Paneles Galva</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Ideal para eventos</p>
+        </a>
+        <a href="/categorias/textiles" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <div style="width: 100%; height: 120px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+            <span style="color: white; font-weight: bold;">Ver Más +</span>
+          </div>
+          <p style="margin: 0; color: #8b5cf6; font-weight: 600; font-size: 14px;">Todos los textiles</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Polos, camisetas, gorras</p>
+        </a>
+      </div>
+    </div>
+
+    <h2 id="diseno-personalizacion">Diseño y Personalización: Consejos para Impacto Máximo</h2>
+
+    <h3>La Importancia de un Diseño Atractivo</h3>
+
+    <p>Un diseño atractivo es fundamental para captar la atención. No se trata solo de poner tu logo; se trata de crear algo visualmente agradable que refuerce tu identidad de marca:</p>
+
+    <ul>
+      <li>Investiga las tendencias actuales en diseño gráfico.</li>
+      <li>Asegúrate de que el diseño sea adaptable a diferentes formatos.</li>
+      <li>Considera la opinión de tu público objetivo.</li>
+    </ul>
+
+    <h3>Materiales y Técnicas de Impresión</h3>
+
+    <p>La calidad de materiales y técnicas de impresión son cruciales:</p>
+
+    <ul>
+      <li><strong>Serigrafía:</strong> Ideal para grandes cantidades y colores sólidos.</li>
+      <li><strong>Bordado:</strong> Perfecto para textiles premium.</li>
+      <li><strong>Grabado láser:</strong> Excelente para metales y productos premium.</li>
+      <li><strong>Impresión digital:</strong> Para diseños complejos y multicolor.</li>
+    </ul>
+
+    <!-- Productos Destacados: Mugs -->
+    <div style="background: #f8fafc; border-radius: 16px; padding: 24px; margin: 32px 0; border: 1px solid #e2e8f0;">
+      <h4 style="margin: 0 0 16px 0; color: #1e293b;">Mugs y Termos para Mayor Impacto:</h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+        <a href="/productos/mug-sublimable-11-onzas" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <img src="https://catalogospromocionales.com/images/productos/1175.jpg" alt="Mug Sublimable 11oz" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 12px;">
+          <p style="margin: 0; color: #1e293b; font-weight: 600; font-size: 14px;">Mug Sublimable 11oz</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">El clásico que nunca falla</p>
+        </a>
+        <a href="/productos/vaso-termico-treking-pro-450-ml" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <img src="https://catalogospromocionales.com/images/productos/10820.jpg" alt="Vaso Térmico Treking" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 12px;">
+          <p style="margin: 0; color: #1e293b; font-weight: 600; font-size: 14px;">Vaso Térmico Treking</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">450ml premium</p>
+        </a>
+        <a href="/categorias/mugs-vasos-termos" style="display: block; background: white; border-radius: 12px; padding: 16px; text-decoration: none; border: 1px solid #e2e8f0;">
+          <div style="width: 100%; height: 120px; background: linear-gradient(135deg, #ec4899, #db2777); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+            <span style="color: white; font-weight: bold;">Ver Más +</span>
+          </div>
+          <p style="margin: 0; color: #ec4899; font-weight: 600; font-size: 14px;">Todos los mugs y termos</p>
+          <p style="margin: 4px 0 0 0; color: #64748b; font-size: 12px;">Categoría completa</p>
+        </a>
+      </div>
+    </div>
+
+    <h2 id="errores-comunes">Errores Comunes al Comprar por Mayor (y Cómo Evitarlos)</h2>
+
+    <p>Evita estos errores frecuentes al comprar <strong>productos promocionales al por mayor</strong>:</p>
+
+    <ul>
+      <li><strong>No solicitar muestras:</strong> Siempre pide muestras antes de un pedido grande.</li>
+      <li><strong>Ignorar costos de envío:</strong> Considera el costo total, no solo el precio unitario.</li>
+      <li><strong>Comprar sin conocer a tu audiencia:</strong> Elige productos que tu público realmente usará.</li>
+      <li><strong>Sacrificar calidad por precio:</strong> Un producto de mala calidad daña tu imagen de marca.</li>
+      <li><strong>No planificar con anticipación:</strong> Los pedidos por mayor requieren tiempo de producción.</li>
+    </ul>
+
+    <h2 id="calculando-roi">Calculando el ROI de Tus Productos Promocionales</h2>
+
+    <p>Para medir el éxito de tu inversión en <strong>productos promocionales por mayoreo</strong>:</p>
+
+    <ul>
+      <li><strong>Costo por impresión:</strong> Divide el costo total entre el número estimado de impresiones.</li>
+      <li><strong>Tasa de retención:</strong> ¿Cuántos clientes conservan y usan el producto?</li>
+      <li><strong>Generación de leads:</strong> ¿Cuántos contactos nuevos generó la campaña?</li>
+      <li><strong>Incremento en ventas:</strong> ¿Aumentaron las ventas después de la distribución?</li>
+    </ul>
+
+    <h2 id="preguntas-frecuentes">Preguntas Frecuentes</h2>
+
+    <p><strong>¿Cuál es la cantidad mínima para comprar al por mayor?</strong></p>
+    <p>En KS Promocionales, los pedidos por mayor generalmente comienzan desde 50-100 unidades. Para pedidos +500 unidades, ofrecemos descuentos adicionales significativos.</p>
+
+    <p><strong>¿Cuánto tiempo toma un pedido por mayor?</strong></p>
+    <p>El tiempo de producción varía según el producto. Generalmente, un pedido estándar toma de 7-15 días hábiles.</p>
+
+    <p><strong>¿Puedo mezclar diferentes productos en un solo pedido?</strong></p>
+    <p>¡Sí! Puedes combinar diferentes productos para alcanzar cantidades que te den mejores precios.</p>
+
+    <p><strong>¿Hacen envíos a todo Ecuador?</strong></p>
+    <p>Sí, realizamos envíos a Quito, Guayaquil, Cuenca, Ambato, Machala, Manta, y todas las ciudades del país.</p>
+
+    <h2 id="conclusion">Conclusión</h2>
+
+    <p>Los <strong>productos promocionales al por mayor</strong> representan una de las estrategias de marketing más rentables. Al comprar en grandes cantidades, reduces costos por unidad y aseguras disponibilidad constante para todas tus iniciativas de marketing.</p>
+
+    <p>La clave del éxito está en elegir el proveedor adecuado, seleccionar productos que resuenen con tu audiencia y planificar estratégicamente la distribución.</p>
+
+    <!-- CTA Final -->
+    <div style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 16px; padding: 40px; margin: 32px 0; text-align: center; color: white;">
+      <h3 style="margin: 0 0 16px 0; font-size: 28px; font-weight: bold;">¿Listo para Impulsar tu Marca?</h3>
+      <p style="margin: 0 0 24px 0; font-size: 18px; opacity: 0.95;">Cotiza tu pedido por mayor hoy y recibe asesoría personalizada sin compromiso</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
+        <a href="https://wa.me/593999814838?text=Hola,%20quiero%20cotizar%20productos%20promocionales%20al%20por%20mayor" style="display: inline-flex; align-items: center; gap: 8px; background: white; color: #ea580c; padding: 18px 32px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 16px;">Cotizar por WhatsApp</a>
+        <a href="/categorias" style="display: inline-block; background: rgba(255,255,255,0.15); color: white; padding: 18px 32px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 16px; border: 2px solid rgba(255,255,255,0.5);">Ver Catálogo Completo</a>
+        <a href="/catalogos-digitales" style="display: inline-block; background: rgba(255,255,255,0.15); color: white; padding: 18px 32px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 16px; border: 2px solid rgba(255,255,255,0.5);">Descargar Catálogo PDF</a>
+      </div>
+    </div>
+
+    <h2>Explora Nuestras Categorías para Compra por Mayor</h2>
+
+    <ul>
+      <li><strong><a href="/categorias/escritura">Artículos de Escritura</a></strong> - Bolígrafos ideales para distribución masiva</li>
+      <li><strong><a href="/categorias/textiles">Textiles Personalizados</a></strong> - Polos, camisetas y gorras para equipos</li>
+      <li><strong><a href="/categorias/tecnologia">Tecnología Promocional</a></strong> - Gadgets que impresionan</li>
+      <li><strong><a href="/categorias/mugs-vasos-termos">Mugs y Termos</a></strong> - El clásico que nunca falla</li>
+      <li><strong><a href="/categorias/bolsos-mochilas">Bolsos y Mochilas</a></strong> - Publicidad ambulante</li>
+      <li><strong><a href="/categorias/oficina">Artículos de Oficina</a></strong> - Presencia en cada escritorio</li>
+    </ul>
+
+    <p>En <strong>KS Promocionales</strong> te ayudamos a encontrar los productos perfectos para tu campaña. <a href="https://wa.me/593999814838?text=Hola,%20necesito%20asesoría%20para%20elegir%20productos%20promocionales%20al%20por%20mayor">Escríbenos por WhatsApp</a> para una asesoría personalizada.</p>
   `
 };
