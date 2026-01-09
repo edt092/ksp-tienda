@@ -2069,7 +2069,7 @@ export const blogContent = {
     </ul>
 
     <p>En <strong>KS Promocionales</strong> te ayudamos a encontrar los productos navideños perfectos para tu campaña. <a href="https://wa.me/593999814838?text=Hola,%20necesito%20asesoría%20para%20elegir%20productos%20promocionales%20navideños">Escríbenos por WhatsApp</a> para una asesoría personalizada y sin compromiso.</p>
-  `
+  `,
 
   'plumas-ecologicas-baltimore-impulsa-tu-marca-con-conciencia-ambiental-en-mexico': `
 <p>¿Te preocupa el impacto ambiental de tus estrategias de marketing? En México, cada vez más empresas buscan alternativas para promocionar su marca de manera efectiva, pero sin comprometer el planeta. La solución está al alcance de tu mano: los bolígrafos ecológicos promocionales.</p>
