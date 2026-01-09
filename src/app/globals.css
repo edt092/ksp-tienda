@@ -29,3 +29,61 @@
     animation-delay: 300ms;
   }
 }
+
+/* Estilos para contenido del blog */
+#blog-content {
+  @apply text-gray-700 leading-relaxed;
+}
+
+#blog-content h2 {
+  @apply text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6 pb-3 border-b-2 border-blue-600;
+}
+
+#blog-content h3 {
+  @apply text-xl md:text-2xl font-semibold text-gray-800 mt-8 mb-4;
+}
+
+#blog-content h4 {
+  @apply text-lg font-semibold text-gray-800 mt-6 mb-3;
+}
+
+#blog-content p {
+  @apply mb-5 leading-relaxed;
+}
+
+#blog-content ul {
+  @apply my-6 space-y-3 pl-6;
+}
+
+#blog-content li {
+  @apply relative pl-4;
+}
+
+#blog-content li::before {
+  content: "";
+  @apply absolute left-0 top-2.5 w-2 h-2 bg-blue-600 rounded-full;
+}
+
+#blog-content a {
+  @apply text-blue-600 hover:text-blue-800 hover:underline font-medium;
+}
+
+#blog-content strong {
+  @apply text-gray-900 font-semibold;
+}
+
+#blog-content em {
+  @apply italic text-gray-600;
+}
+
+#blog-content blockquote {
+  @apply my-8 p-6 bg-gradient-to-r from-green-500 to-green-600 rounded-xl text-white;
+}
+
+#blog-content blockquote p {
+  @apply text-white mb-2;
+}
+
+#blog-content blockquote a {
+  @apply inline-block mt-2 px-6 py-3 bg-white text-green-600 rounded-lg font-bold hover:bg-gray-100 no-underline;
+}

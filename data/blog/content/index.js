@@ -2071,40 +2071,34 @@ export const blogContent = {
     <p>En <strong>KS Promocionales</strong> te ayudamos a encontrar los productos navideños perfectos para tu campaña. <a href="https://wa.me/593999814838?text=Hola,%20necesito%20asesoría%20para%20elegir%20productos%20promocionales%20navideños">Escríbenos por WhatsApp</a> para una asesoría personalizada y sin compromiso.</p>
   `,
 
-  'plumas-ecologicas-baltimore-impulsa-tu-marca-con-conciencia-ambiental-en-mexico': `
-
-<div class="my-8 p-6 bg-gradient-to-r from-green-500 to-green-600 rounded-xl shadow-lg">
-  <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-    <div class="text-white">
-      <h4 class="text-xl font-bold mb-1">¿Te interesa este producto?</h4>
+  'plumas-ecologicas-baltimore-impulsa-tu-marca-con-conciencia-ambiental-en-mexico': `<div>
+  <div>
+    <div>
+      <h4>¿Te interesa este producto?</h4>
       
-<div class="my-8 p-6 bg-gradient-to-r from-primary to-primary-dark rounded-xl shadow-lg text-center">
-  <h4 class="text-xl font-bold text-white mb-2">Explora nuestro catalogo</h4>
-  <p class="text-white/80 mb-4">Encuentra este y muchos mas productos promocionales</p>
-  <a href="https://www.kronosolopromocionales.com/#categorias" class="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors shadow-md">
+<div>
+  <h4>Explora nuestro catalogo</h4>
+  <p>Encuentra este y muchos mas productos promocionales</p>
+  <a href="https://www.kronosolopromocionales.com/#categorias">
     Explora el catálogo completo aquí
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><p></svg>
   </a>
 </div>
-<p class="text-gray-700 leading-relaxed mb-4">con los mejores precios del mercado.</p>
-  `,
-  'mug-metalico-vinga-eco-mu-442-impulsa-tu-marca-con-conciencia-ambiental-en-mexico': `
-
-<div class="my-8 p-6 bg-gradient-to-r from-green-500 to-green-600 rounded-xl shadow-lg">
-  <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-    <div class="text-white">
-      <h4 class="text-xl font-bold mb-1">¿Te interesa este producto?</h4>
+<p>con los mejores precios del mercado.</p>`,
+  'mug-metalico-vinga-eco-mu-442-impulsa-tu-marca-con-conciencia-ambiental-en-mexico': `<div>
+  <div>
+    <div>
+      <h4>¿Te interesa este producto?</h4>
       
-<div class="my-8 p-6 bg-gradient-to-r from-primary to-primary-dark rounded-xl shadow-lg text-center">
-  <h4 class="text-xl font-bold text-white mb-2">Explora nuestro catalogo</h4>
-  <p class="text-white/80 mb-4">Encuentra este y muchos mas productos promocionales</p>
-  <a href="https://www.kronosolopromocionales.com/#categorias" class="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors shadow-md">
+<div>
+  <h4>Explora nuestro catalogo</h4>
+  <p>Encuentra este y muchos mas productos promocionales</p>
+  <a href="https://www.kronosolopromocionales.com/#categorias">
     Explora el catálogo completo aquí
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><p></svg>
   </a>
 </div>
-<p class="text-gray-700 leading-relaxed mb-4">con los mejores precios del mercado.</p>
-  `,
+<p>con los mejores precios del mercado.</p>`,
 
   'adios-a-las-perdidas-boomtag-bp-29-el-rastreador-airtag-promocional-que-impulsa-tu-marca': `
 <p>¿Cuántas veces has sentido ese frío en el estómago al no encontrar las llaves, la cartera, o incluso ese prototipo valioso que llevabas a la presentación? En la vertiginosa jungla del mundo empresarial, perder tiempo y recursos en objetos extraviados es un lujo que nadie puede permitirse. Pero, ¿y si te dijera que existe una solución elegante, práctica y, además, una potente herramienta de marketing?</p>
