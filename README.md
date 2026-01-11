@@ -1,387 +1,254 @@
-# 🎨 KS Promocionales - Catálogo Digital Interactivo
+# KS Promocionales - Tienda Digital
 
-![Ecuador](https://img.shields.io/badge/Made%20in-Ecuador-FFD100?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=)
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)
-![React-Konva](https://img.shields.io/badge/React--Konva-18-blue?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=flat-square&logo=next.js)
+![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat-square&logo=tailwind-css)
+![Vercel](https://img.shields.io/badge/Vercel-Deployed-000?style=flat-square&logo=vercel)
 
-Tienda digital de productos promocionales personalizados con **editor visual de logos** interactivo y **cotización directa por WhatsApp**.
+Tienda digital de productos promocionales personalizados con editor visual de logos interactivo y cotizacion directa por WhatsApp.
 
-## ✨ Características Principales
+---
 
-### 🎯 Editor Visual de Logos (React-Konva)
-- **Carga de logos** en PNG, JPG y SVG
-- **Drag & Drop** intuitivo para posicionar el logo
-- **Redimensionamiento** con controles en las esquinas
-- **Rotación** manual y con botones (15° por clic)
-- **Previsualización en tiempo real** sobre la imagen del producto
-- **Exportación de mockup** en alta calidad (PNG 2x)
-- **Descarga del mockup** para compartir
+## Stack Tecnologico
 
-### 📦 Catálogo Completo
-- **10 Categorías** organizadas: Artículos de Escritura, Herramientas, Hogar, Llaveros, Memorias USB, Mugs/Vasos/Termos, Oficina, Pharma, Tecnología, Variedades
-- **12 Productos de ejemplo** con storytelling completo
-- **Galería de imágenes** con thumbnails
-- **Información detallada** (características, casos de uso, beneficios)
+### Frontend
+| Tecnologia | Version | Proposito |
+|------------|---------|-----------|
+| Next.js | 14.2 | Framework React con App Router y SSG |
+| React | 18.3 | Libreria UI base |
+| React-Konva | 18.2 | Editor visual interactivo (canvas) |
+| Konva | 9.3 | Motor grafico 2D |
+| Framer Motion | 12.23 | Animaciones avanzadas |
+| Tailwind CSS | 3.4 | Framework CSS utility-first |
+| Lucide React | 0.553 | Iconos SVG |
 
-### 💬 Integración WhatsApp
-- **Botón CTA principal**: "Ver mi logo en este producto"
-- **Cotización directa** con mensajes prellenados por producto
-- **Descarga de mockup** personalizado
-- **Flujo optimizado** para conversión
+### Build y Herramientas
+| Tecnologia | Version | Proposito |
+|------------|---------|-----------|
+| PostCSS | 8.4 | Procesador CSS |
+| Autoprefixer | 10.4 | Prefijos CSS automaticos |
+| ESLint | 8.57 | Linter JavaScript |
+| next-sitemap | 4.2 | Generador de sitemap |
 
-### 🚀 Tecnología
-- **Next.js 14 App Router** - Generación estática de 29 páginas
-- **JavaScript puro** - Sin TypeScript para máxima simplicidad
-- **Tailwind CSS** - Diseño minimalista y moderno
-- **Sin base de datos** - Contenido desde archivos JSON locales
-- **SEO Optimizado** - Metadatos completos, sitemap, OpenGraph
-- **Build exitoso** - Listo para desplegar en Vercel
+### Infraestructura
+- **Hosting**: Vercel (region gru1 - Sao Paulo)
+- **CDN**: Vercel Edge Network
+- **SSL**: Automatico via Vercel
+
+---
+
+## Arquitectura
+
+### Patron Arquitectonico
+- **Static Site Generation (SSG)** - Sitio completamente estatico
+- **Next.js App Router** - Estructura modular por rutas
+- **Component-based UI** - Componentes React reutilizables
+- **Data-driven content** - Contenido desde archivos JSON
+
+### Flujo de Datos
+```
+data/
+  products.json     -->  src/app/productos/[slug]/page.jsx
+  categories.json   -->  src/app/categorias/[slug]/page.jsx
+                              |
+                              v
+                    src/components/
+                              |
+                              v
+                    next build --> out/ --> Vercel
+```
+
+### Paginas Generadas
+- **Home** - Pagina principal
+- **Categorias** (~10 paginas dinamicas)
+- **Productos** (~300+ paginas dinamicas)
+- **Blog** (~5+ articulos dinamicos)
+- **Paginas estaticas**: nosotros, contacto, catalogos-digitales
+
+---
 
 ## Estructura del Proyecto
 
 ```
 kspromocionales-tienda/
-├── data/                      # Datos estáticos
-│   ├── categories.json        # Categorías de productos
-│   └── products.json          # Catálogo de productos
-├── public/                    # Archivos estáticos
-│   ├── images/                # Imágenes (agregar manualmente)
-│   └── favicon.ico
+├── data/                          # Datos estaticos
+│   ├── blog/content/              # Articulos del blog (markdown)
+│   ├── categories.json            # Categorias de productos
+│   └── products.json              # Catalogo de productos (~300+)
+├── public/                        # Archivos estaticos
+│   ├── images/                    # Imagenes de productos y categorias
+│   ├── favicon.ico
+│   └── robots.txt
 ├── src/
-│   ├── app/                   # App Router de Next.js 14
-│   │   ├── categorias/
-│   │   │   └── [slug]/page.jsx
-│   │   ├── productos/
-│   │   │   └── [slug]/page.jsx
+│   ├── app/                       # App Router (Next.js 14)
+│   │   ├── blog/
+│   │   │   ├── page.jsx           # Lista de articulos
+│   │   │   └── [slug]/page.jsx    # Articulo individual
+│   │   ├── catalogos-digitales/page.jsx
+│   │   ├── categorias/[slug]/page.jsx
+│   │   ├── contacto/page.jsx
 │   │   ├── nosotros/page.jsx
-│   │   ├── layout.jsx
-│   │   ├── page.jsx
-│   │   ├── globals.css
-│   │   ├── sitemap.js
-│   │   └── robots.js
-│   └── components/            # Componentes reutilizables
-│       ├── LogoEditor.jsx        # ✨ Editor visual con React-Konva
-│       ├── LogoEditorModal.jsx   # ✨ Modal del editor
-│       ├── ProductActions.jsx    # ✨ Botones CTA
-│       ├── SEOHead.jsx
-│       ├── WhatsAppButton.jsx
-│       ├── StorytellingHero.jsx
+│   │   ├── productos/[slug]/page.jsx
+│   │   ├── layout.jsx             # Layout principal
+│   │   ├── page.jsx               # Home
+│   │   └── globals.css
+│   └── components/                # 16 componentes reutilizables
+│       ├── BlogProductCarousel.jsx
 │       ├── CategoryGrid.jsx
-│       ├── ProductCard.jsx
+│       ├── CategoryProductsGrid.jsx
+│       ├── DigitalAdvisorChat.jsx # Chat interactivo
+│       ├── Footer.jsx
 │       ├── Header.jsx
-│       └── Footer.jsx
-├── .gitignore
-├── jsconfig.json
-├── next.config.js
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-└── README.md
+│       ├── LogoEditor.jsx         # Editor visual con Konva
+│       ├── LogoEditorModal.jsx
+│       ├── ProductActions.jsx
+│       ├── ProductCard.jsx
+│       ├── ProductImageGallery.jsx
+│       ├── PromoCarousel.jsx
+│       ├── SEOHead.jsx
+│       ├── StorytellingHero.jsx
+│       ├── TableOfContents.jsx
+│       └── WhatsAppButton.jsx
+├── scripts/                       # Scripts de utilidad
+├── .env.example                   # Variables de entorno ejemplo
+├── jsconfig.json                  # Aliases de importacion
+├── next.config.js                 # Configuracion Next.js
+├── next-sitemap.config.js         # Configuracion sitemap
+├── tailwind.config.js             # Configuracion Tailwind
+├── vercel.json                    # Configuracion Vercel
+└── package.json
 ```
 
-## Instalación
+---
 
-### Requisitos Previos
+## Funcionalidades Principales
 
-- Node.js 18.0 o superior
+### Editor Visual de Logos (React-Konva)
+- Carga de logos en PNG, JPG y SVG
+- Drag & Drop para posicionamiento
+- Redimensionamiento con controles
+- Rotacion manual y con botones (15 grados)
+- Previsualizacion en tiempo real
+- Exportacion de mockup en alta calidad (PNG 2x)
+
+### Catalogo de Productos
+- ~300+ productos con SEO optimizado
+- 10 categorias organizadas
+- Galeria de imagenes con thumbnails
+- Storytelling y casos de uso
+
+### Blog Integrado
+- Articulos en formato markdown
+- Contenido SEO optimizado
+- Carrusel de productos relacionados
+
+### Integracion WhatsApp
+- Botones CTA contextuales
+- Mensajes prellenados por producto
+- Tracking con Google Analytics
+
+---
+
+## Instalacion
+
+### Requisitos
+- Node.js 18.0+
 - npm, yarn, pnpm o bun
 
 ### Pasos
 
-1. **Clonar o descomprimir el proyecto**
-
 ```bash
+# 1. Navegar al proyecto
 cd kspromocionales-tienda
-```
 
-2. **Instalar dependencias**
-
-```bash
+# 2. Instalar dependencias
 npm install
-# o
-yarn install
-# o
-pnpm install
-```
 
-3. **Configurar variables de entorno (opcional)**
+# 3. Configurar variables de entorno (opcional)
+cp .env.example .env.local
 
-Crea un archivo `.env.local`:
-
-```env
-# Google Analytics 4
-NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
-
-# WhatsApp Business
-NEXT_PUBLIC_WHATSAPP_NUMBER=593999999999
-
-# Site URL
-NEXT_PUBLIC_SITE_URL=https://kspromocionales.com
-```
-
-4. **Ejecutar en desarrollo**
-
-```bash
+# 4. Ejecutar en desarrollo
 npm run dev
 ```
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+Abrir [http://localhost:3000](http://localhost:3000)
 
-## Agregar Imágenes
+---
 
-Las imágenes actualmente usan gradientes de color como placeholder. Para agregar imágenes reales:
+## Configuracion
 
-1. Coloca tus imágenes en `public/images/`
-2. Organiza por carpetas:
-   - `public/images/categories/` - Imágenes de categorías
-   - `public/images/products/` - Imágenes de productos
-3. Los nombres deben coincidir con los definidos en los archivos JSON
+### Variables de Entorno
+```env
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX          # Google Analytics 4
+NEXT_PUBLIC_WHATSAPP_NUMBER=593999999999 # WhatsApp Business
+NEXT_PUBLIC_SITE_URL=https://kspromocionales.com
+```
 
-### Formatos Recomendados
-
-- **WebP o AVIF** para mejor rendimiento
-- Resolución mínima: 800x800px para productos
-- Optimiza las imágenes con herramientas como:
-  - [Squoosh](https://squoosh.app/)
-  - [TinyPNG](https://tinypng.com/)
-  - ImageOptim (Mac)
-
-## Personalización
-
-### 1. Actualizar Información del Negocio
-
-Edita los siguientes archivos:
-
-**`src/components/Footer.jsx`** - Información de contacto, redes sociales
-
-**`src/components/SEOHead.jsx`** - Función `generateLocalBusinessSchema()` con datos del negocio
-
-**`src/app/layout.jsx`** - Metadata global del sitio
-
-### 2. Modificar Colores
-
-Los colores están configurados en `tailwind.config.js`:
-
+### Personalizacion de Colores
+Editar `tailwind.config.js`:
 ```js
 colors: {
-  ecuador: {
-    yellow: '#FFD100',
-    red: '#ED1C24',
-    blue: '#0047AB',
-  },
+  primary: { ... },
+  secondary: { ... },
+  accent: { ... }
 }
 ```
 
-### 3. Agregar/Editar Productos
+### Agregar/Editar Productos
+Editar `data/products.json` y `data/categories.json`
 
-Edita `data/products.json` y `data/categories.json`. Los cambios se reflejan automáticamente.
+---
 
-### 4. Configurar WhatsApp
-
-En `src/components/WhatsAppButton.jsx`, reemplaza:
-
-```js
-phoneNumber = '593999999999' // Tu número de WhatsApp Business
-```
-
-### 5. Configurar Google Analytics
-
-En `src/components/WhatsAppButton.jsx`, reemplaza:
-
-```js
-gtag('config', 'G-XXXXXXXXXX'); // Tu ID de GA4
-```
-
-## Build para Producción
-
-### Build Local
+## Scripts
 
 ```bash
-npm run build
-```
-
-Esto genera un sitio completamente estático en la carpeta `out/`.
-
-### Previsualizar Build
-
-```bash
-npm run start
-```
-
-## Despliegue en Vercel
-
-### Opción 1: Despliegue Automático (Recomendado)
-
-1. Crea una cuenta en [Vercel](https://vercel.com)
-2. Instala Vercel CLI:
-
-```bash
-npm install -g vercel
-```
-
-3. Desde la carpeta del proyecto:
-
-```bash
-vercel
-```
-
-4. Sigue las instrucciones interactivas
-5. Tu sitio estará en línea en minutos con SSL automático
-
-### Opción 2: GitHub Integration
-
-1. Sube tu proyecto a GitHub
-2. Importa el repositorio en Vercel
-3. Vercel detectará automáticamente Next.js
-4. Configura las variables de entorno si es necesario
-5. Deploy automático en cada push a main
-
-### Configuración de Vercel
-
-Crea `vercel.json` (opcional):
-
-```json
-{
-  "buildCommand": "next build",
-  "outputDirectory": "out",
-  "devCommand": "next dev",
-  "framework": "nextjs",
-  "regions": ["gru1"]
-}
-```
-
-La región `gru1` (São Paulo) es la más cercana a Ecuador para mejor rendimiento.
-
-## SEO y Rendimiento
-
-### Sitemap y Robots.txt
-
-Se generan automáticamente en:
-- `/sitemap.xml` - Todas las páginas indexables
-- `/robots.txt` - Configuración para crawlers
-
-### JSON-LD Structured Data
-
-Cada página incluye:
-- **HomePage**: LocalBusiness schema
-- **CategoryPage**: BreadcrumbList schema
-- **ProductPage**: Product schema
-
-### Optimización de Imágenes
-
-Next.js optimiza automáticamente las imágenes con:
-- Lazy loading
-- Responsive images
-- Formatos modernos (WebP/AVIF)
-
-### Performance Tips
-
-- Usa imágenes optimizadas (WebP/AVIF)
-- Mantén los JSON pequeños (< 500 productos)
-- Minimiza animaciones pesadas
-- Usa Edge Network de Vercel
-
-## Tracking y Analytics
-
-### Google Analytics 4
-
-El componente `WhatsAppButton` incluye tracking automático:
-
-```js
-window.gtag('event', 'whatsapp_click', {
-  event_category: 'engagement',
-  event_label: productName || categoryName || 'general',
-  product_name: productName,
-  category_name: categoryName,
-});
-```
-
-### Eventos Trackeados
-
-- `whatsapp_click` - Clic en botones de WhatsApp
-- Información contextual (producto, categoría)
-- Preview del mensaje enviado
-
-## Mantenimiento
-
-### Actualizar Contenido
-
-1. Edita `data/categories.json` o `data/products.json`
-2. Ejecuta `npm run build`
-3. Vercel re-despliega automáticamente con GitHub integration
-
-### Actualizar Next.js
-
-```bash
-npm update next react react-dom
-```
-
-### Actualizar Dependencias
-
-```bash
-npm update
-```
-
-## Solución de Problemas
-
-### Error: Module not found
-
-```bash
-# Limpia cache y reinstala
-rm -rf node_modules .next
-npm install
-```
-
-### Imágenes no se muestran
-
-- Verifica que estén en `public/images/`
-- Rutas deben empezar con `/` (ejemplo: `/images/logo.png`)
-- Nombres deben coincidir exactamente con JSON
-
-### Build falla en Vercel
-
-- Revisa que todos los imports sean correctos
-- Verifica que no hay errores de ESLint
-- Ejecuta `npm run build` localmente primero
-
-## Scripts Disponibles
-
-```bash
-npm run dev      # Desarrollo en localhost:3000
-npm run build    # Build de producción
+npm run dev      # Desarrollo (localhost:3000)
+npm run build    # Build de produccion
 npm run start    # Previsualizar build
 npm run lint     # Ejecutar ESLint
 ```
 
-## Tecnologías Utilizadas
+---
 
-- **Next.js 14** - Framework React con App Router
-- **React 18** - Librería UI
-- **React-Konva 18** - Canvas interactivo para el editor visual
-- **Konva** - Motor 2D para manipulación de elementos gráficos
-- **Tailwind CSS 3** - Framework CSS utility-first
-- **Lucide React** - Iconos modernos
-- **PostCSS** - Procesador CSS
-- **ESLint** - Linter para JavaScript
+## Despliegue
 
-## 📚 Documentación Adicional
+### Vercel (Recomendado)
 
-- **`GUIA_COMPLETA.md`** - Guía detallada de instalación, configuración y personalización
-- **`RESUMEN.md`** - Resumen ejecutivo del proyecto y estado de completitud
-- **`DEPLOYMENT.md`** - Instrucciones para despliegue en Vercel
-- **`IMAGES.md`** - Guía para configurar imágenes con Cloudinary
+```bash
+# Instalar Vercel CLI
+npm install -g vercel
 
-## Licencia
+# Desplegar
+vercel
+```
 
-Este proyecto es privado y propietario de KS Promocionales.
+O conectar repositorio GitHub a Vercel para despliegue automatico.
 
-## Soporte
-
-Para soporte técnico o consultas:
-- WhatsApp: +593 99 999 9999
-- Email: contacto@kspromocionales.com
+### Build Local
+```bash
+npm run build
+# Sitio estatico generado en out/
+```
 
 ---
 
-**Hecho con ❤️ en Ecuador 🇪🇨**
+## SEO
+
+- **Sitemap**: Generado automaticamente en `/sitemap.xml`
+- **Robots.txt**: Configurado en `/robots.txt`
+- **JSON-LD**: Schema de LocalBusiness, Product, BreadcrumbList
+- **OpenGraph**: Metadatos para redes sociales
+- **Imagenes**: Optimizacion automatica (WebP/AVIF)
+
+---
+
+## Documentacion Adicional
+
+- `DEPLOYMENT.md` - Guia detallada de despliegue
+- `CHAT_DIGITAL.md` - Documentacion del chat interactivo
+
+---
+
+## Licencia
+
+Proyecto privado y propietario de KS Promocionales.

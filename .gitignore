@@ -44,3 +44,16 @@ promo-scraper/
 data/backups/
 data/*_scraped*.json
 data/products_merged.json
+data/productos_con_seo.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+
+# Archivos de conflicto de sincronización
+*Name clash*
