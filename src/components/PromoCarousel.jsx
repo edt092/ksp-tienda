@@ -11,7 +11,7 @@ const slides = [
     title: 'Catálogo Navidad 2025',
     subtitle: 'Regalos corporativos para fin de año',
     description: 'Sorprende a tus colaboradores y clientes con productos de calidad personalizados con tu marca',
-    ctaStore: { text: 'Ver Productos', href: '/categorias' },
+    ctaStore: { text: 'Ver Productos', href: '/categorias/novedades' },
     ctaWhatsapp: { text: 'Cotizar Ahora', message: 'Hola, me interesa el catálogo de Navidad 2025' }
   },
   {
@@ -20,7 +20,7 @@ const slides = [
     title: 'Mugs y Termos',
     subtitle: 'Personaliza tu marca',
     description: 'Amplia variedad de mugs, termos y vasos personalizables para tu empresa',
-    ctaStore: { text: 'Ver Colección', href: '/categoria/mugs-vasos-termos' },
+    ctaStore: { text: 'Ver Colección', href: '/categorias/mugs-vasos-termos' },
     ctaWhatsapp: { text: 'Solicitar Cotización', message: 'Hola, me interesan los mugs y termos personalizados' }
   },
   {
@@ -29,17 +29,17 @@ const slides = [
     title: 'Tecnología Promocional',
     subtitle: 'Innovación para tu marca',
     description: 'Audífonos, parlantes, cargadores y más productos tech personalizados',
-    ctaStore: { text: 'Explorar Tech', href: '/categoria/tecnologia-accesorios' },
+    ctaStore: { text: 'Explorar Tech', href: '/categorias/tecnologia' },
     ctaWhatsapp: { text: 'Pedir Info', message: 'Hola, me interesa la tecnología promocional' }
   },
   {
     id: 4,
     image: '/images/products-categoria/articulos-escritura/boligrafo-bambu/boligrafo-bambu.jpg',
-    title: 'Artículos de Escritorio',
+    title: 'Artículos de Escritura',
     subtitle: 'Impacta en cada oficina',
     description: 'Bolígrafos, libretas, organizadores y más para el día a día corporativo',
-    ctaStore: { text: 'Ver Artículos', href: '/categoria/escritura-oficina' },
-    ctaWhatsapp: { text: 'Cotizar', message: 'Hola, necesito artículos de escritorio personalizados' }
+    ctaStore: { text: 'Ver Artículos', href: '/categorias/escritura' },
+    ctaWhatsapp: { text: 'Cotizar', message: 'Hola, necesito artículos de escritura personalizados' }
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const slides = [
     title: 'Artículos de Oficina',
     subtitle: 'Tu marca en cada escritorio',
     description: 'Libretas, calculadoras, sets de escritorio y más para el día a día corporativo',
-    ctaStore: { text: 'Ver Artículos', href: '/categoria/oficina' },
+    ctaStore: { text: 'Ver Artículos', href: '/categorias/oficina' },
     ctaWhatsapp: { text: 'Solicitar Precio', message: 'Hola, me interesan artículos de oficina corporativos' }
   }
 ];

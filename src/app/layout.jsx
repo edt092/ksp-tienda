@@ -1,6 +1,6 @@
 import './globals.css';
 import Script from 'next/script';
-import { Inter, Poppins, Space_Grotesk } from 'next/font/google';
+import { Inter, Poppins, Space_Grotesk, Playfair_Display } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -22,6 +22,12 @@ const poppins = Poppins({
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space',
+  display: 'swap',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
   display: 'swap',
 });
 
@@ -69,7 +75,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es-EC" className={`${inter.variable} ${poppins.variable} ${spaceGrotesk.variable}`}>
+    <html lang="es-EC" className={`${inter.variable} ${poppins.variable} ${spaceGrotesk.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>

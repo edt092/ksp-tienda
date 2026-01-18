@@ -11,23 +11,28 @@ module.exports = {
         primary: {
           DEFAULT: '#0047AB',
           light: '#1E5FCC',
-          dark: '#002F7A',
+          dark: '#003380',
         },
         secondary: {
-          DEFAULT: '#2563EB',
-          light: '#60A5FA',
-          dark: '#1E40AF',
+          DEFAULT: '#1A1A1A',
+          light: '#333333',
+          dark: '#000000',
         },
         accent: {
-          DEFAULT: '#0EA5E9',
-          light: '#7DD3FC',
-          dark: '#0284C7',
+          DEFAULT: '#0047AB',
+          light: '#E8F0FE',
+          dark: '#003380',
+        },
+        cream: {
+          DEFAULT: '#F8FAFC',
+          dark: '#F1F5F9',
         },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
         heading: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
         display: ['var(--font-space)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

@@ -268,5 +268,23 @@
     ],
     "image": "https://catalogospromocionales.com/images/productos/10514.jpg",
     "productCount": 12
+  },
+  {
+    "id": "antiestres",
+    "name": "Antiestrés",
+    "slug": "antiestres",
+    "description": "Descubre productos antiestrés personalizados con tu logo. Pelotas, figuras y accesorios relajantes para promocionar tu marca en Ecuador.",
+    "icon": "Smile",
+    "story": "Los productos antiestrés son ideales para aliviar tensiones mientras mantienen tu marca presente. Perfectos para oficinas, eventos y campañas de bienestar corporativo.",
+    "seoTitle": "Productos Antiestrés Promocionales Ecuador | KS",
+    "seoDescription": "Productos antiestrés personalizados con logo. Pelotas, figuras y más. Alta calidad. Envíos en Ecuador. ¡Cotiza por WhatsApp!",
+    "benefits": [
+      "Personalización con tu logo",
+      "Variedad de formas y colores",
+      "Ideal para bienestar corporativo",
+      "Precios competitivos"
+    ],
+    "image": "https://catalogospromocionales.com/images/productos/5877.jpg",
+    "productCount": 9
   }
 ]

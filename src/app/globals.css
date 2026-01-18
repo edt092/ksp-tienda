@@ -23,26 +23,42 @@
     @apply max-w-7xl;
   }
 
-  /* Card styles */
+  /* Card styles - Bowery Lane style */
   .card {
-    @apply bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300;
+    @apply bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300;
   }
 
-  /* Button styles */
+  /* Button styles - Bowery Lane style */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-all duration-300 shadow-sm hover:shadow-md;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-semibold hover:bg-primary-dark transition-all duration-300;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-sm hover:shadow-md;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-white font-semibold hover:bg-secondary-light transition-all duration-300;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary text-primary font-semibold rounded-xl hover:bg-primary hover:text-white transition-all duration-300;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-secondary text-secondary font-semibold hover:bg-secondary hover:text-white transition-all duration-300;
   }
 
   .btn-whatsapp {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-all duration-300 shadow-sm hover:shadow-md;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-500 text-white font-semibold hover:bg-green-600 transition-all duration-300;
+  }
+
+  /* Bowery Lane specific components */
+  .bowery-heading {
+    @apply font-serif text-4xl md:text-5xl tracking-tight;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+  }
+
+  .category-sidebar-item {
+    @apply flex items-center justify-between py-3 px-4 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-100 cursor-pointer transition-colors;
+  }
+
+  .benefit-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium;
   }
 }
 

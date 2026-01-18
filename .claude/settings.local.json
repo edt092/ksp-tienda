@@ -6,7 +6,14 @@
       "Bash(npm run build:*)",
       "Bash(find:*)",
       "Bash(mkdir:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git mv:*)",
+      "Bash(npx next build)",
+      "Bash(npx eslint:*)",
+      "Bash(node -e:*)"
     ],
     "deny": [],
     "ask": []
