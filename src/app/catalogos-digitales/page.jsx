@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { BookOpen, Download } from 'lucide-react';
 
 export default function CatalogosDigitalesPage() {
   const [catalogos, setCatalogos] = useState([]);
@@ -37,73 +37,102 @@ export default function CatalogosDigitalesPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 md:pt-32 pb-12 md:pb-20">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12 md:mb-16 animate-fade-in">
-          <div className="flex justify-center mb-6">
-            <div className="bg-primary/10 p-4 rounded-full">
-              <BookOpen className="w-12 h-12 md:w-16 md:h-16 text-primary" />
-            </div>
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-            Catálogos Digitales
-          </h1>
-          <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Explora nuestra colección completa de productos promocionales. Descubre ideas para hacer brillar tu marca.
-          </p>
+    <>
+      {/* Spacer for fixed header */}
+      <div className="h-[88px] md:h-[96px]"></div>
 
-          {/* CTA Button */}
-          <button
-            onClick={handleSolicitarCatalogo}
-            className="inline-flex items-center gap-3 bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <Download className="w-5 h-5" />
-            Solicita tu Catálogo Ahora
-          </button>
+      {/* Breadcrumb */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="container mx-auto px-4 py-3">
+          <nav className="flex items-center gap-2 text-sm">
+            <Link href="/" className="text-gray-500 hover:text-primary transition-colors">
+              Inicio
+            </Link>
+            <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            <span className="text-secondary font-medium">Catálogos Digitales</span>
+          </nav>
         </div>
+      </div>
 
-        {/* Catalogos Grid */}
-        <div className="max-w-5xl mx-auto space-y-8">
-          {catalogos.map((catalogo, index) => (
-            <div
-              key={catalogo.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 animate-scale-in"
-              style={{ animationDelay: `${index * 50}ms` }}
-            >
-              <div className="relative w-full aspect-[8.5/11] bg-gray-100">
-                <Image
-                  src={catalogo.imagen}
-                  alt={`Catálogo KS Promocionales - Página ${catalogo.id}`}
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
-                  priority={index < 3}
-                />
+      {/* Hero Section */}
+      <section className="bg-primary">
+        <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex justify-center mb-6">
+              <div className="bg-white/10 backdrop-blur-sm p-4 md:p-5">
+                <svg className="w-10 h-10 md:w-14 md:h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-12 md:mt-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              ¿Te interesa algún producto?
-            </h2>
-            <p className="text-gray-600 mb-6 text-base md:text-lg">
-              Contáctanos y te enviaremos información detallada de nuestros catálogos y productos
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 md:mb-6 leading-tight">
+              Catálogos Digitales
+            </h1>
+            <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto px-4 mb-8">
+              Explora nuestra colección completa de productos promocionales. Descubre ideas para hacer brillar tu marca.
             </p>
+
+            {/* CTA Button */}
             <button
               onClick={handleSolicitarCatalogo}
-              className="inline-flex items-center gap-3 bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center gap-3 bg-white text-primary px-6 md:px-8 py-3 md:py-4 font-semibold hover:bg-gray-100 transition-colors"
             >
-              <Download className="w-5 h-5" />
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
               Solicita tu Catálogo Ahora
             </button>
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+
+      {/* Catalogos Grid */}
+      <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
+            {catalogos.map((catalogo, index) => (
+              <div
+                key={catalogo.id}
+                className="bg-white border border-gray-200 overflow-hidden hover:border-primary transition-all duration-300"
+              >
+                <div className="relative w-full aspect-[8.5/11] bg-gray-100">
+                  <Image
+                    src={catalogo.imagen}
+                    alt={`Catálogo KS Promocionales - Página ${catalogo.id}`}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
+                    priority={index < 3}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-secondary py-12 md:py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-4">
+            ¿Te interesa algún producto?
+          </h2>
+          <p className="text-gray-400 mb-6 md:mb-8 max-w-xl mx-auto text-sm md:text-base px-4">
+            Contáctanos y te enviaremos información detallada de nuestros catálogos y productos promocionales.
+          </p>
+          <button
+            onClick={handleSolicitarCatalogo}
+            className="inline-flex items-center gap-2 bg-primary text-white px-6 md:px-8 py-3 font-semibold hover:bg-primary-dark transition-colors"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Solicita tu Catálogo Ahora
+          </button>
+        </div>
+      </section>
+    </>
   );
 }
