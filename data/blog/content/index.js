@@ -2236,4 +2236,20 @@ export const blogContent = {
 <p><strong><a href="https://www.kronosolopromocionales.com/#categorias">Explora el catálogo completo aquí</a></strong>. Encuentra BP-29 y una amplia variedad de promocionales</p>
 <p>con los mejores precios del mercado.</p>
   `,
+
+  'promocionales-antimicrobianos-la-defensa-invisible-que-impulsa-tu-marca-en-mexico': `
+<div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-primary p-6 rounded-r-xl mb-8">
+<div class="my-8 p-6 bg-gradient-to-r from-green-500 to-green-600 rounded-xl shadow-lg">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="text-white">
+      <h4 class="text-xl font-bold mb-1">¿Te interesa este producto?</h4>
+      <div class="my-8 p-6 bg-gradient-to-r from-primary to-primary-dark rounded-xl shadow-lg text-center">
+  <h4 class="text-xl font-bold text-white mb-2">Explora nuestro catalogo</h4>
+  <p class="text-white/80 mb-4">Encuentra este y muchos mas productos promocionales</p>
+  <a href="https://www.kronosolopromocionales.com/#categorias" class="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors shadow-md">
+    Ver catálogo completo de Promocionales
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+  </a>
+</div>
+  `,
 };
