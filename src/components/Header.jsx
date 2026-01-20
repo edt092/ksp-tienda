@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -51,12 +52,16 @@ export default function Header() {
       <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            {/* Logo - Bowery Lane Style */}
+            {/* Logo */}
             <Link href="/" className="flex-shrink-0">
-              <h1 className="font-serif text-2xl md:text-3xl tracking-tight text-secondary">
-                <span className="italic">KS</span>
-                <span className="font-normal">Promocionales</span>
-              </h1>
+              <Image
+                src="/ksp-1.jpg"
+                alt="KS Promocionales"
+                width={200}
+                height={70}
+                className="h-16 md:h-20 w-auto object-contain"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
