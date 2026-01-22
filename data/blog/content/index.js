@@ -1,3 +1,4 @@
+import cucharas_y_tenedores_que_protegen_descubre_el_set_de_cubiertos_antibacterianos_para_empresas_en_ecuador from './cucharas-y-tenedores-que-protegen-descubre-el-set-de-cubiertos-antibacterianos-para-empresas-en-ecuador.js'
 // Blog post content - 500-750 palabras cada uno
 export const blogContent = {
   'productos-promocionales-ecuador': `
